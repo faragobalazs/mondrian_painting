@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        display: grid;
+        width: 748px;
+        height: 748px;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 22px;
+        gap: 9px;
+        background-color: #000;
+      }
+
+      .red {
+        background-color: #e72f24;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      .yellow {
+        background-color: #f9d01e;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+
+      .blue {
+        background-color: #004592;
+        border-bottom: 10px solid #000;
+        grid-column-start: 4;
+        grid-column-end: 5
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .black {
+        background-color: #232629;
+        grid-column-start: 3;
+        grid-column-end: 4
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+
+      .white {
+        background-color: #f0f1ec;
+      }
+
+      #one {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      #two {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+
+      #three {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+
+      #four {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+
+      #five {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="red"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="black"></div>
+      <div class="white" id="one"></div>
+      <div class="white" id="two"></div>
+      <div class="white" id="three"></div>
+      <div class="white" id="four"></div>
+      <div class="white" id="five"></div>
+    </div>
+  </body>
+</html>
